@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8" />
         <title>LA LEYENDA DE AANG: AVATAR</title>
-        <script src="avatar.js"></script>
-</head>
-    <nav>
-        <ul>
-            <li> REGLAS DE JUEGO </li>
-            <li> Seleccionar un personaje </li>
-            <li> Cada personaje ataca con un tipo diferente de elemento</li>
-            <li> Los jugadores cuentan con 3 vidas cada uno, el que gane mas veces gana la partida</li>
-            <li> Se selecciona el ataque: PUÑO gana a BARRIDA, PATADA gana a PUÑO y BARRIDA gana a PATADA</li>
-
-        </ul>
-    </nav>
+        <!--<link rel="stylesheet" type="text/css" href="css/">-->
+    </head>
     <body>
+        <nav>
+            <ul>
+                <li> REGLAS DE JUEGO </li>
+                <li> Seleccionar un personaje </li>
+                <li> Cada personaje ataca con un tipo diferente de elemento</li>
+                <li> Los jugadores cuentan con 3 vidas cada uno, el que gane mas veces gana la partida</li>
+                <li> Se selecciona el ataque: PUÑO gana a BARRIDA, PATADA gana a PUÑO y BARRIDA gana a PATADA</li>
+    
+            </ul>
+        </nav>
         <h1>AVATAR 🔥💧🌱🌪️</h1> <!--Esto es estatico, NO cambia, el h1 se utiliza una vez-->
-
-        <section id="seleccionar-personaje">
-        <h2>Elige tu Personaje</h2>
         <ul>
             <li>
                 <label for="zuko">Zuko</label> <!--Esta etiqueta es para darle un indicador a los usuarios de que están seleccionando-->
@@ -53,11 +50,11 @@
         </section>
 
         <section id="mensajes"> <!--Será un párrafo dinamico-->
-            <p>Tu personaje atacó con todo el poder del FUEGO, el personaje del enemigo atacó con el medio poder de la TIERRA - GANASTE 🎉</p>
         </section>
 
         <section id="reiniciar">
             <button id="boton-reiniciar">Reiniciar</button>
         </section>
+        <script src="js/avatar.js"></script>
     </body>
 </html>

@@ -68,7 +68,7 @@ function ataqueBarrida(){ //Modificamos la variable global ataqueJugador
 
 function ataqueAleatorioEnemigo(){//Ahora ocupando la variable global nueva le decimos el ataque y necesitamos la función aleatorio
     let ataqueAleatorio = aleatorio(1, 3)
-   
+    
     if(ataqueAleatorio == 1){
         ataqueEnemigo = 'Punio'
     } else if(ataqueAleatorio == 2){
@@ -76,8 +76,32 @@ function ataqueAleatorioEnemigo(){//Ahora ocupando la variable global nueva le d
     } else {
         ataqueEnemigo = 'Barrida'
     }
+    combate()
 }
 
+//Nueva funcion para combinaciones de combate, se mostrara en forma de mensaje
+function combate(){
+    if(ataqueEnemigo == ataqueJugador){
+        crearMensaje("EMPATE")
+    }else if( ataqueJugador == 'Punio' && ataqueEnemigo == 'Barrida'){
+        crearMensaje("GANASTE")
+    } else if(ataqueJugador == 'Patada' && ataqueEnemigo == 'Punio'){
+        crearMensaje("GANASTE")
+    } else if(ataqueJugador == 'Barrida' && ataqueEnemigo == 'Patada'){
+        crearMensaje("GANASTE")
+    }else {
+        crearMensaje("PERDISTE")
+    }
+}
+
+//Nueva funcion para mandar mensajes al usuario
+function crearMensaje(resultado){
+    let sectionMensaje = document.getElementById('mensajes')
+    let parrafo = document.createElement('p')
+//Aca le decimos que el contenido interno sea igual al del html, debemos cambiar lo que tenemos con variables
+    parrafo.innerHTML = 'Tu personaje atacó con ' + ataqueJugador + ' , el personaje del enemigo atacó con ' + ataqueEnemigo + ' ' + resultado
+    sectionMensaje.appendChild(parrafo) //esta linea es para que el codigo se meta en el html
+}
 
 
 function aleatorio(min, max){
