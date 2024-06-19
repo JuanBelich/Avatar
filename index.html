@@ -1,51 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>LA LEYENDA DE AANG: AVATAR</title>
-        <link rel="stylesheet" type="text/css" href="avatar.css">
-    </head>
+        <script src="avatar.js"></script>
+</head>
+    <nav>
+        <ul>
+            <li> REGLAS DE JUEGO </li>
+            <li> Seleccionar un personaje </li>
+            <li> Cada personaje ataca con un tipo diferente de elemento</li>
+            <li> Los jugadores cuentan con 3 vidas cada uno, el que gane mas veces gana la partida</li>
+            <li> Se selecciona el ataque: PUÑO gana a BARRIDA, PATADA gana a PUÑO y BARRIDA gana a PATADA</li>
+
+        </ul>
+    </nav>
     <body>
-        <h1>AVATAR 🔥💧🌱🌪️</h1>
-        
+        <h1>AVATAR 🔥💧🌱🌪️</h1> <!--Esto es estatico, NO cambia, el h1 se utiliza una vez-->
+
         <section id="seleccionar-personaje">
-            <h2>Elige tu Personaje</h2>
-
-            <label for="zuko">Zuko</label>
-            <input type="radio" name="personaje" id="zuko"/>
-
-            <label for="katara">Katara</label>
-            <input type="radio" name="personaje" id="katara"/>
-
-            <label for="aang">Aang</label>
-            <input type="radio" name="personaje" id="aang"/>
-
-            <label for="toph">Toph</label>
-            <input type="radio" name="personaje" id="toph"/>
-
-            <button id="boton-personaje">Seleccionar</button>
-        </section>
-
+        <h2>Elige tu Personaje</h2>
+        <ul>
+            <li>
+                <label for="zuko">Zuko</label> <!--Esta etiqueta es para darle un indicador a los usuarios de que están seleccionando-->
+                <input type="radio" name="personaje" id="zuko"/> <!-- name es para agrupar todos los imputs y poder seleccionar-->
+            </li>
+            <li>
+                <label for="katara">Katara</label> <!--El atributo for ayuda a vincular un label con un imput a través del mismo id-->
+                <input type="radio" name="personaje" id="katara"/> <!--Acá van los personajes-->
+            </li>
+            <li>
+                <label for="aang">Aang</label>
+                <input type="radio" name="personaje" id="aang"/> <!--Le damos un atributo id para saber cual es el valor de cada uno-->
+            </li>
+            <li>
+                <label for="toph">Toph</label>
+                <input type="radio" name="personaje" id="toph"/>
+            </li>
+            <br>
+            <button id="boton-personaje">Seleccionar</button> <!-- El botón para seleccionar el personaje-->
+            </section>
+        </ul>
         <section id="seleccionar-ataque">
-            <h2>Elige tu ataque</h2>
-            <p>Tu personaje <span id="personaje-jugador"></span> tiene <span>3</span> vidas</p>
-            <!-- la seleccion del enemigo esta oculta -->
-            <p>El personaje <span hidden id="personaje-enemigo"></span> del enemigo tienen <span>3</span> vidas</p>
+            <h2>Elige tu ataque</h2> <!--Se puede utilizar varias veces-->
+            <p>Tu personaje <span id="personaje-jugador"></span> tiene <span>3</span> vidas</p> <!--Pero esto debe ser dinamico, necesitamos que cambie-->
+            <p>El personaje <span id="personaje-enemigo"></span> del enemigo tienen <span>3</span> vidas</p> <!--Con la etiqueta spam vamos a modificar el 3 con JS-->
             <p>
-                <button id="boton-fuego">Fuego 🔥</button>
-                <button id="boton-agua">Agua 💧</button>
-                <button id="boton-tierra">Tierra 🌱</button>
-                <button id="boton-aire">Aire 🌪️</button>
+                <button id="boton-punio">Punio ✊</button>
+                <button id="boton-patada">Patada 🦶</button>
+                <button id="boton-barrida">Barrida 👣</button>
             </p>
         </section>
 
-        <section id="mensajes">
+        <section id="mensajes"> <!--Será un párrafo dinamico-->
             <p>Tu personaje atacó con todo el poder del FUEGO, el personaje del enemigo atacó con el medio poder de la TIERRA - GANASTE 🎉</p>
         </section>
 
         <section id="reiniciar">
-            <button id="boton-reiniciar" onclick="location.reload()">Reiniciar</button>
+            <button id="boton-reiniciar">Reiniciar</button>
         </section>
-        <script src="avatar.js"></script>
     </body>
 </html>
