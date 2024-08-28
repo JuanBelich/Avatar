@@ -567,9 +567,162 @@ input{
     width: 35px;
     height: 35px;
     background-color: #030202;
+}
 
+@media(max-width: 991px){
+    body {
+        font-family: "Exo 2";
+        background-color: #f0f0f0;
+        background-image: url('assets/avatar.jpg'); /* Agregado: puedes reemplazar 'tu-imagen-de-fondo.jpg' con la URL de tu imagen de fondo */
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+    }
+    
+    .reglas-del-juego {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-color: #d2cccc71;
+        width: 80%;
+        margin: auto;
+        border-radius: 3%;
+        box-shadow: 5%;
+        margin-bottom: 8%;
+        line-height: 1.2; /* Ajusta el valor según el espacio que desees entre líneas */
+        margin-bottom: 1%; /* Ajusta el valor según el espacio que desees después de cada línea */
+        font-size: medium;
+        
+    }
+    
+    ol {
+        padding-left: 5vh;
+    
+    }
+    
+    ul {
+        padding-left: 10vh;
+    }
+    
+    .personajes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 5vw;
+        height: 120vh; 
+        margin: 15px;
+        padding: 15px;
+        margin: auto;
+    
+    }
+    
+    .seleccionar-personaje {
+        display: grid;
+        grid-template-columns: max-content;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-color: #d2cccc46;
+        width: 75%;
+        max-height: fit-content;
+        border-radius: 100px ;
+        box-shadow: 5%;
+        backdrop-filter: blur(12px); /* Ajusta el valor de desenfoque según lo desees*/
+        margin: auto;
+        font-family:"Permanent Marker";
+        font-size: medium;
+    }
+    
+    img{
+        width: 27vw; /* Establece el ancho deseado para todas las imágenes */
+        height: 17vh; /* Establece la altura deseada para todas las imágenes */
+        padding: 3px;
+        border-radius: 50px;
+    }
+    button {
+        font-family:"Permanent Marker";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 10px 20px;
+        background-color: #e2830e;
+        color: #050202;
+        border: none;
+        cursor: pointer;
+        box-shadow: 30px;
+        width: 50%;
+        box-shadow: 30px;
+        font-size: large;
+        font-weight: 500;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        margin-top: 2%;
+    }
+
+
+.seleccionar-ataque {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #d2cccc46;
+    width: 85%;
+    border-radius:  100px;
+    box-shadow: 5%;
+    backdrop-filter: blur(12px); /* Ajusta el valor de desenfoque según lo desees*/
+    font-size: large;
+    margin: auto;
+    font-family:"Permanent Marker";
+    padding-bottom: auto;
 
 
 }
 
+.ataques{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 80vw;
+    border-radius: 90px;
+    box-shadow: 5%;
+    font-size: large;
+    margin: auto;
+}
+        
+#mensajes {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6951b6f;
+    color: #040302;
+    width: 80%;
+    margin: auto;
+    border-radius: 3%;
+    box-shadow: 5%;
+    line-height: 1; 
+    font-size: small;
+    overflow-y: auto;
+    font-family: "Exo 2";
+    font-weight: 500;
+    backdrop-filter: blur(30px); /* Ajusta el valor de desenfoque según lo desees*/
+    border-radius:  50px;
+    margin-bottom: 3%;
 
+    animation-name: mensajes;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+
+} 
+
+}
