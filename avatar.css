@@ -1,0 +1,575 @@
+/* Estilos generales */
+body {
+    font-family: "Exo 2";
+    background-color: #f0f0f0;
+    background-image: url('assets/avatar.jpg'); /* Agregado: puedes reemplazar 'tu-imagen-de-fondo.jpg' con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; /* Asegura que el fondo cubra toda la ventana del navegador */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    overflow-y: scroll; /* Habilita el scroll vertical */
+    scroll-behavior: smooth; /* Hace que el desplazamiento sea suave */
+} 
+
+                /* AUDIO   */
+
+
+h1 {
+    font-family:"Permanent Marker";
+    text-align: center;
+    color: #161515;
+    text-decoration: solid;
+    text-shadow: #0056b3;
+    font-size: 60px;
+    padding-top: 1% ;
+    margin: auto;
+    margin-top: 2%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #e2830e;
+    color: #050202;
+    border: none;
+    cursor: pointer;
+    box-shadow: 30px;
+    width: 15%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    margin-top: 2%;
+
+}
+
+button:hover {
+    background-color: #d28e07b4;
+}
+
+#boton-jugar{
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+    background-color: #e2830e;
+    color: #050202;
+    border: none;
+    cursor: pointer;
+    box-shadow: 40px;
+    width: 250%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    /* margin-bottom: 20%; */
+    border-radius: 30px; /*48% queda mas redondito*/
+    margin-left: -100%; /*Para centrar el boton*/
+}
+
+#boton-jugar:hover{
+    background-color: #d28e07b4;
+}
+
+
+ol {
+    padding-left: 5vh;
+}
+
+ul {
+    padding-left: 10vh;
+}
+
+/* Estilos específicos */
+.reglas-del-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #d2cccc46;
+    width: 50%;
+    margin: auto;
+    border-radius: 3%;
+    box-shadow: 5%;
+    
+    margin-bottom: 8%;
+    line-height: 1.4; /* Ajusta el valor según el espacio que desees entre líneas */
+    margin-bottom: 1%; /* Ajusta el valor según el espacio que desees después de cada línea */
+    font-size: large;
+}
+
+
+
+.seleccionar-personaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #d2cccc46;
+    width: 75%;
+    border-radius: 100px ;
+    box-shadow: 5%;
+    backdrop-filter: blur(12px); /* Ajusta el valor de desenfoque según lo desees*/
+    font-size: large;
+    margin: auto;
+    font-family:"Permanent Marker";
+    font-size: x-large;
+}
+
+img{
+    width: 17vw; /* Establece el ancho deseado para todas las imágenes */
+    height: 27vh; /* Establece la altura deseada para todas las imágenes */
+    padding: 5px;
+    border-radius: 80px;
+}
+
+.personajes{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 5vw;
+    height: 40vh; 
+    margin: 15px;
+    padding: 15px;
+    margin: auto;
+
+} 
+
+input{
+    visibility: hidden;
+}
+
+
+
+#boton-zuko{
+    background-color: rgb(146, 11, 11);
+    color: #e1d830; 
+    margin-left: 30%;
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #050202;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 30px;
+    width: 40%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+
+#boton-zuko:hover{
+    background-color: rgb(224, 79, 79);
+    color: #e1d830;
+}
+
+#boton-zuko:active{
+    background-color:  rgb(163, 85, 85);
+    color: #e1d830;;
+    box-shadow: 0 5px 15px #666;
+
+}
+
+#label-zuko{
+    background-color: rgba(146, 11, 11, 0);
+    font-family:"Permanent Marker";
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color:  #e1d830;
+    border: none;
+    cursor: pointer;
+    height: 4vh;
+    width: 6vw;
+    box-shadow: 30px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#boton-katara{
+    background-color: rgb(22, 74, 195);
+    color: #f1f1e4;
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 40%;
+    color: #050202;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+
+#boton-katara:hover{
+    background-color:#b7c3e9;
+    color:  rgb(22, 74, 195);
+}
+
+#boton-katara:active{
+    background-color: #f4f1ed;
+    color: rgb(22, 74, 195);
+    box-shadow: 0 5px 15px #666;
+
+}
+
+#label-katara{
+    background-color: rgba(146, 11, 11, 0);
+    font-family:"Permanent Marker";
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #030202;
+    border: none;
+    cursor: pointer;
+    height: 4vh;
+    width: 6vw;
+    box-shadow: 30px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#boton-aang{
+    background-color: rgb(240, 200, 77);
+    color: #090904;
+    margin-left: 30%;
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #e1cfcf;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    width: 40%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+
+#boton-aang:hover{
+    background-color:#a0bbdf;
+    color:  rgb(184, 206, 238);
+}
+#boton-aang:active{
+    background-color: #e8880b;
+    color: rgb(219, 219, 222);
+    box-shadow: 0 5px 15px #666;
+
+}
+
+#label-aang{
+    background-color: rgba(146, 11, 11, 0);
+    font-family:"Permanent Marker";
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #0a0202;
+    border: none;
+    cursor: pointer;
+    height: 4vh;
+    width: 6vw;
+    box-shadow: 30px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#boton-toph{
+    background-color: rgb(37, 79, 10);
+    color: #ab9269;
+    margin-left: 30%;
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #050202;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 30px;
+    width: 40%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+
+#boton-toph:hover{
+    background-color:rgb(86, 137, 55);
+    color:  #ed970d;
+}
+
+#boton-toph:active{
+    background-color: #ab9269;
+    color: rgb(37, 79, 10);
+    box-shadow: 0 5px 15px #666;
+
+}
+
+#label-toph{
+    background-color: rgba(146, 11, 11, 0);
+    font-family:"Permanent Marker";
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #030202;
+    border: none;
+    cursor: pointer;
+    height: 4vh;
+    width: 6vw;
+    box-shadow: 30px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+                /*ATAQUES*/         
+
+.seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #d2cccc46;
+    width: 85%;
+    border-radius:  100px;
+    box-shadow: 5%;
+    backdrop-filter: blur(12px); /* Ajusta el valor de desenfoque según lo desees*/
+    font-size: large;
+    margin: auto;
+    font-family:"Permanent Marker";
+
+
+}
+
+.ataques{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 80vw;
+    border-radius: 90px;
+    box-shadow: 5%;
+    font-size: large;
+    margin: auto;
+
+}
+
+.punio{
+    margin-top: 1%;
+}
+
+.patada{
+    margin-top: 1%;
+}
+
+.barrida{
+
+    margin-top: 1%;
+
+}
+
+#boton-punio{
+    background-color: rgb(46, 112, 19);
+    color: #000000; 
+    margin-left: 30%;
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 30px;
+    width: 40%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10%;
+    border-radius: 15px;
+    margin-bottom: 15%;
+}
+
+#boton-punio:hover{
+    background-color: rgb(142, 219, 114);
+}
+
+#boton-patada{
+    background-color: rgba(72, 158, 198, 0.948);
+    margin-left: 30%;
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #050202;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 30px;
+    width: 40%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10%;
+    border-radius: 15px;
+    margin-bottom: 15%;
+}
+
+#boton-patada:hover{
+    background-color: rgba(122, 193, 226, 0.942);
+}
+
+#boton-barrida{
+    background-color: rgb(161, 63, 63);
+    color: #000000; 
+    margin-left: 30%;
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #050202;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 30px;
+    width: 40%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10%;
+    border-radius: 15px;
+    margin-bottom: 15%;
+}
+
+#boton-barrida:hover{
+    background-color: rgb(187, 133, 133);
+}
+
+#boton-personaje{
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    width: 120%;
+
+} 
+
+
+#mensajes {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6951b6f;
+    color: #040302;
+    width: 60%;
+    margin: auto;
+    border-radius: 3%;
+    box-shadow: 5%;
+    line-height: 1; 
+    font-size: large;
+    overflow-y: auto;
+    font-family: "Exo 2";
+    font-weight: 600;
+    backdrop-filter: blur(30px); /* Ajusta el valor de desenfoque según lo desees*/
+    border-radius:  100px;
+    margin-bottom: 1%;
+
+    animation-name: mensajes;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+ 
+} 
+
+@keyframes mensajes {
+    from {background-color: rgba(255, 0, 0, 0.466);}
+    to {background-color: rgba(255, 255, 0, 0.476);}
+
+0% {
+    /* Estilo inicial */
+    transform: scale(1);
+    }
+50% {
+    /* Estilo intermedio */
+    transform: scale(1.2);
+    }
+100% {
+    /* Estilo final */
+    transform: scale(1);
+    }
+}
+
+
+#reiniciar {
+    margin-top: -1.9%;
+
+} 
+
+#icono-reiniciar{
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    background-color: #030202;
+
+
+
+}
+
+
