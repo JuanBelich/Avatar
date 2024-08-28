@@ -3,9 +3,9 @@ body {
     font-family: "Exo 2";
     background-color: #f0f0f0;
     background-image: url('assets/avatar.jpg'); /* Agregado: puedes reemplazar 'tu-imagen-de-fondo.jpg' con la URL de tu imagen de fondo */
-    background-size: cover;
+    background-size:cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     height: 100%; /* Asegura que el fondo cubra toda la ventana del navegador */
     margin: 0;
     padding: 0;
@@ -16,8 +16,6 @@ body {
     overflow-y: scroll; /* Habilita el scroll vertical */
     scroll-behavior: smooth; /* Hace que el desplazamiento sea suave */
 } 
-
-                /* AUDIO   */
 
 
 h1 {
@@ -127,6 +125,7 @@ ul {
     align-content: center;
     justify-content: center;
     background-color: #d2cccc46;
+    background-repeat: repeat;
     width: 75%;
     border-radius: 100px ;
     box-shadow: 5%;
@@ -542,15 +541,15 @@ input{
 
 0% {
     /* Estilo inicial */
-    transform: scale(1);
+    transform: scale(0.8);
     }
 50% {
     /* Estilo intermedio */
-    transform: scale(1.2);
+    transform: scale(1);
     }
 100% {
     /* Estilo final */
-    transform: scale(1);
+    transform: scale(0.8);
     }
 }
 
@@ -724,5 +723,13 @@ input{
     animation-iteration-count: infinite;
 
 } 
+}
 
+@media(max-width: 555px){
+    img{
+        width: 27vw; /* Establece el ancho deseado para todas las imágenes */
+        height: 17vh; /* Establece la altura deseada para todas las imágenes */
+        padding: 3px;
+        border-radius: 50px;
+    }
 }
