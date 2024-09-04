@@ -127,3 +127,4 @@ function mostrarMensajeError(container, mensaje) {
 }
 
 window.addEventListener('load', iniciarJuego);
+
