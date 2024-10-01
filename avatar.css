@@ -134,7 +134,9 @@ ul {
     font-family:"Permanent Marker";
     font-size: x-large;
 }
-
+h2{
+    text-align: center;
+}
 
 img{
     width: 17vw; /* Establece el ancho deseado para todas las imágenes */
@@ -369,6 +371,110 @@ input{
     font-size: larger;
     font-weight: 500;
 }
+
+.personajes-agregados{
+    display: flex;
+}
+
+
+#boton-appa{
+    background-color: white;
+    color: #ab9269;
+    margin-left: 30%;
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #050202;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 30px;
+    width: 40%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+#boton-appa:hover{
+    background-color:wheat;
+    color:  white;
+}
+#boton-appa:active{
+    background-color: #ab9269;
+    color:#ab9269;
+    box-shadow: 0 5px 15px #666;
+}
+#label-appa{
+    background-color: rgba(146, 11, 11, 0);
+    font-family:"Permanent Marker";
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #030202;
+    border: none;
+    cursor: pointer;
+    height: 4vh;
+    width: 6vw;
+    box-shadow: 30px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#boton-korra{
+    background-color: rgba(60, 180, 180, 0.986);
+    color: wheat;
+    margin-left: 30%;
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #050202;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 30px;
+    width: 40%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+#boton-korra:hover{
+    background-color:rgb(78, 150, 209);
+    color:  #ab9269;
+}
+#boton-korra:active{
+    background-color: #0056b3;
+    color:#0056b3;
+    box-shadow: 0 5px 15px #666;
+}
+#label-korra{
+    background-color: rgba(146, 11, 11, 0);
+    font-family:"Permanent Marker";
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #030202;
+    border: none;
+    cursor: pointer;
+    height: 4vh;
+    width: 6vw;
+    box-shadow: 30px;
+    font-size: larger;
+    font-weight: 500;
+}
+
 
                 /*ATAQUES*/         
 
