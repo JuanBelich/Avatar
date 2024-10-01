@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>LA LEYENDA DE AANG: AVATAR</title>
+
+    <link rel="stylesheet" href="avatar.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Permanent+Marker&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+    </style>
+</head>
+<body>
+    <h1>AVATAR: La leyenda de Aang</h1> <!--Esto es estatico, NO cambia, el h1 se utiliza una vez-->
+    <section id="inicio">
+        <button id="boton-reglas">Reglas del Juego</button>
+        <!-- <div class="audio-container">
+            <audio controls autoplay>
+                <source src="./Assets/sound/Gatos Fantasma.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio> 
+        </div>-->
+    </section>
+
+    <div class="reglas-del-juego">
+        <section id="reglas-del-juego">
+            <h4>REGLAS DEL JUEGO</h4>
+            <ol>
+                <li><strong>Selección de Personajes:</strong>
+                    <ul>
+                        <li>El jugador elige uno de los cuatro personajes: Zuko, Katara, Aang, o Toph.</li>
+        
+                        <li>El enemigo es asignado aleatoriamente de entre estos personajes.</li>
+        
+                    </ul>
+                </li>
+                <li><strong>Ataques:</strong>
+                    <ul>
+                        <li>El jugador elige entre tres ataques: Puño, Patada, y Barrida.</li>
+        
+                        <li>El enemigo elige su ataque aleatoriamente.</li>
+        
+                    </ul>
+                </li>
+                <li><strong>Reglas del Combate:</strong>
+                    <ul>
+        
+                        <li><strong>Empate:</strong> Si ambos eligen el mismo ataque.</li>
+        
+                        <li><strong>Victoria del Jugador:</strong>
+                            <ul>
+        
+                                <li>Puño ✊ vence a Barrida 👣.</li>
+        
+                                <li>Patada 🦶 vence a Puño ✊.</li>
+        
+                                <li>Barrida 👣 vence a Patada 🦶.</li>
+        
+                            </ul>
+                        </li>
+                        <li><strong>Derrota del Jugador:</strong> Cualquier otra combinación.</li>
+                    </ul>
+                </li>
+                <li><strong>Vidas:</strong>
+                    <ul>
+                        <li>Ambos comienzan con 3 vidas.</li>
+        
+                        <li>Perder un combate disminuye una vida.</li>
+        
+                    </ul>
+                </li>
+                <li><strong>Fin del Juego:</strong>
+                    <ul>
+        
+                        <li><strong>Victoria del Jugador:</strong> Enemigo pierde todas sus vidas.</li>
+        
+                        <li><strong>Derrota del Jugador:</strong> Jugador pierde todas sus vidas.</li>
+        
+                        <li>Se deshabilitan los botones de ataque y se muestra un botón para reiniciar el juego.</li>
+                    </ul>
+                </li>
+                <li><strong>Reinicio del Juego:</strong>
+                    <ul>
+        
+                        <li>El jugador puede reiniciar el juego, recargando la página.</li>
+        
+                    </ul>
+                </li>
+            </ol>
+
+        </section>
+
+        <div>
+            <button class="boton" id="boton-jugar">Jugar</button>
+        </div>
+
+    </div>
+    
+    <div class="seleccionar-personaje">
+        <section id="seleccionar-personaje">
+            <h2>Elige tu Personaje</h2>
+            <div class="personajes">
+                <div class="zuko">
+                    <img src="assets/zuko.jpg" alt="">
+                    <!-- <input type="radio" name="personaje" id="zuko"/> name es para agrupar todos los imputs y poder seleccionar
+                    <label id="label-zuko" for="zuko">Zuko</label> Esta etiqueta es para darle un indicador a los usuarios de que están seleccionando -->
+                    
+                    <button type="button" id="boton-zuko">
+                        <label id="label-zuko" for="zuko">Zuko</label>
+                    </button>
+                    <input type="radio" name="personaje" id="zuko"/>
+                </div>
+
+                <div class="katara">
+                    <img src="assets/katara-transformed.jpeg" alt="">
+                    <!-- <input type="radio" name="personaje" id="katara"/>
+                    <label id="label-katara" for="katara" >Katara</label> El atributo for ayuda a vincular un label con un imput a través del mismo id -->
+                    
+                    <button type="button" id="boton-katara">
+                        <label id="label-katara" for="katara" >Katara</label>
+                    </button>
+                    <input type="radio" name="personaje" id="katara"/> 
+
+                </div>
+                <div class="aang">
+                    <img src="assets/aang.jpg" alt="">
+                    <!-- <input type="radio" name="personaje" id="aang"/> 
+                    <label id="label-aang" for="aang">Aang</label> -->
+                    
+                    <button type="button" id="boton-aang">
+                        <label id="label-aang" for="aang">Aang</label>
+                    </button>
+                       <input type="radio" name="personaje" id="aang"/>
+
+                </div>
+                <div class="toph">
+                    <img src="assets/90cfcd88-c226-47bf-bacb-13fe7373ded2.jfif" alt="">
+                    <!-- <input type="radio" name="personaje" id="toph"/>
+                    <label id="label-toph" for="toph">Toph</label> -->
+                    
+                    <button type="button" id="boton-toph">
+                        <label id="label-toph" for="toph">Toph</label>
+                    </button>
+                    <input type="radio" name="personaje" id="toph"/>
+                </div>               
+            </div>
+            <button id="boton-personaje">Seleccionar personaje</button> <!-- El botón para seleccionar el personaje-->    
+        </section>
+    </div>
+
+                <!-- Ataques -->
+
+    <div class="seleccionar-ataque">
+
+        <section id="seleccionar-ataque">
+            <h2>Elige tu ataque</h2> <!--Se puede utilizar varias veces-->
+            <p>Tu personaje <span id="personaje-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p> <!--Pero esto debe ser dinamico, necesitamos que cambie-->
+            <p>El personaje <span id="personaje-enemigo"></span> del enemigo tienen <span id="vidas-enemigo">3</span> vidas</p> <!--Con la etiqueta spam vamos a modificar el 3 con JS-->
+           
+
+                <div class="reiniciar">
+                    <section id="reiniciar">
+                        <button id="boton-reiniciar" > <img id="icono-reiniciar" src="assets/icons8-reiniciar-35.png" alt=""></button>
+                    </section>
+                </div>
+
+
+
+           
+            <div class="ataques">    
+                    <div class="punio"> <img src="assets/punio.gif" alt="punio">  <button id="boton-punio">Puño </button></div>    
+                    <div class="patada"> <img src="assets/Patada_del_Drag_n_del_Vendaval.gif" alt=""> <button id="boton-patada">Patada</button></div>
+                    <div class="barrida">  <img src="assets/barridax3.gif" alt=""> <button id="boton-barrida">Barrida</button></div>                          
+            </div>
+            <div class="mensajes" > <section id="mensajes"> <!--Será un párrafo dinamico--></section></div>
+            <section id="mensajes"> <!--Será un párrafo dinamico--></section>
+
+            
+        </section>
+    </div>
+
+
+
+
+    <script src="avatar.js"></script>
+</body>
+</html>

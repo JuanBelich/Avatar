@@ -3,9 +3,9 @@ body {
     font-family: "Exo 2";
     background-color: #f0f0f0;
     background-image: url('assets/avatar.jpg'); /* Agregado: puedes reemplazar 'tu-imagen-de-fondo.jpg' con la URL de tu imagen de fondo */
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     height: 100%; /* Asegura que el fondo cubra toda la ventana del navegador */
     margin: 0;
     padding: 0;
@@ -125,7 +125,6 @@ ul {
     align-content: center;
     justify-content: center;
     background-color: #d2cccc46;
-    background-repeat: repeat;
     width: 75%;
     border-radius: 100px ;
     box-shadow: 5%;
@@ -135,6 +134,7 @@ ul {
     font-family:"Permanent Marker";
     font-size: x-large;
 }
+
 
 img{
     width: 17vw; /* Establece el ancho deseado para todas las imágenes */
@@ -506,7 +506,7 @@ input{
     align-items: center;
     margin-top: 2%;
     width: 120%;
-    
+
 } 
 
 
@@ -532,7 +532,7 @@ input{
     animation-duration: 10s;
     animation-play-state: running;
     animation-iteration-count: infinite;
- 
+
 } 
 
 @keyframes mensajes {
@@ -541,15 +541,15 @@ input{
 
 0% {
     /* Estilo inicial */
-    transform: scale(0.8);
+    transform: scale(1);
     }
 50% {
     /* Estilo intermedio */
-    transform: scale(1);
+    transform: scale(1.2);
     }
 100% {
     /* Estilo final */
-    transform: scale(0.8);
+    transform: scale(1);
     }
 }
 
@@ -568,105 +568,107 @@ input{
     background-color: #030202;
 }
 
-@media(max-width: 991px){
-    body {
-        font-family: "Exo 2";
-        background-color: #f0f0f0;
-        background-image: url('assets/avatar.jpg'); /* Agregado: puedes reemplazar 'tu-imagen-de-fondo.jpg' con la URL de tu imagen de fondo */
-        background-size: cover;
-        background-position: center;
-        background-repeat: repeat;
-    }
-    
-    .reglas-del-juego {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        background-color: #d2cccc71;
-        width: 80%;
-        margin: auto;
-        border-radius: 3%;
-        box-shadow: 5%;
-        margin-bottom: 8%;
-        line-height: 1.2; /* Ajusta el valor según el espacio que desees entre líneas */
-        margin-bottom: 1%; /* Ajusta el valor según el espacio que desees después de cada línea */
-        font-size: medium;
-        
-    }
-    
-    ol {
-        padding-left: 5vh;
-    
-    }
-    
-    ul {
-        padding-left: 10vh;
-    }
-    
-    .personajes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        width: 5vw;
-        height: 120vh; 
-        margin: 15px;
-        padding: 15px;
-        margin: auto;
-    
-    }
-    
-    .seleccionar-personaje {
-        display: grid;
-        grid-template-columns: max-content;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        background-color: #d2cccc46;
-        width: 75%;
-        max-height: fit-content;
-        border-radius: 100px ;
-        box-shadow: 5%;
-        backdrop-filter: blur(12px); /* Ajusta el valor de desenfoque según lo desees*/
-        margin: auto;
-        font-family:"Permanent Marker";
-        font-size: medium;
-    }
-    
-    img{
-        width: 27vw; /* Establece el ancho deseado para todas las imágenes */
-        height: 17vh; /* Establece la altura deseada para todas las imágenes */
-        padding: 3px;
-        border-radius: 50px;
-    }
-    button {
-        font-family:"Permanent Marker";
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        padding: 10px 20px;
-        background-color: #e2830e;
-        color: #050202;
-        border: none;
-        cursor: pointer;
-        box-shadow: 30px;
-        width: 50%;
-        box-shadow: 30px;
-        font-size: large;
-        font-weight: 500;
-        margin-bottom: 20px;
-        border-radius: 30px;
-        margin-top: 2%;
-    }
+/*Responsive*/
 
+@media(max-width: 991px){
+body {
+    font-family: "Exo 2";
+    background-color: #f0f0f0;
+    background-image: url('assets/avatar.jpg'); /* Agregado: puedes reemplazar 'tu-imagen-de-fondo.jpg' con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button {
+    font-family:"Permanent Marker";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #e2830e;
+    color: #050202;
+    border: none;
+    cursor: pointer;
+    box-shadow: 30px;
+    width: 50%;
+    box-shadow: 30px;
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    margin-top: 2%;
+}
+
+.reglas-del-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #d2cccc71;
+    width: 80%;
+    margin: auto;
+    border-radius: 3%;
+    box-shadow: 5%;
+    margin-bottom: 8%;
+    line-height: 1.2; /* Ajusta el valor según el espacio que desees entre líneas */
+    margin-bottom: 1%; /* Ajusta el valor según el espacio que desees después de cada línea */
+    font-size: medium;
+}
+
+ol {
+    padding-left: 5vh;
+
+}
+
+ul {
+    padding-left: 10vh;
+}
+
+.personajes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 5vw;
+    height: 120vh; 
+    margin: 15px;
+    padding: 15px;
+    margin: auto;
+
+}
+
+.seleccionar-personaje {
+    display: grid;
+    grid-template-columns: max-content;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #d2cccc46;
+    width: 75%;
+    max-height: fit-content;
+    border-radius: 100px ;
+    box-shadow: 5%;
+    backdrop-filter: blur(12px); /* Ajusta el valor de desenfoque según lo desees*/
+    margin: auto;
+    font-family:"Permanent Marker";
+    font-size: medium;
+}
+
+img{
+    width: 27vw; /* Establece el ancho deseado para todas las imágenes */
+    height: 17vh; /* Establece la altura deseada para todas las imágenes */
+    padding: 3px;
+    border-radius: 50px;
+}
+
+                /*ATAQUES*/         
 
 .seleccionar-ataque {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -681,7 +683,6 @@ input{
     font-size: large;
     margin: auto;
     font-family:"Permanent Marker";
-    padding-bottom: auto;
 
 
 }
@@ -723,13 +724,5 @@ input{
     animation-iteration-count: infinite;
 
 } 
-}
 
-@media(max-width: 555px){
-    img{
-        width: 27vw; /* Establece el ancho deseado para todas las imágenes */
-        height: 17vh; /* Establece la altura deseada para todas las imágenes */
-        padding: 3px;
-        border-radius: 50px;
-    }
 }
